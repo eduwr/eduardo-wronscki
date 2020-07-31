@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { PictureWithCircles } from '../molecules';
-import { HeaderBackground, Title, SubTitle } from '../atoms';
+import { HeaderBackground, Title, Paragraph } from '../atoms';
 
 const Container = styled.div`
   display: flex;
@@ -27,10 +27,10 @@ export const Header: React.FC = () => {
         <Span>Olá!</Span> O meu nome é <Span>Eduardo.</Span>
       </Title>
       <PictureWithCircles />
-      <SubTitle>
+      <Paragraph>
         Sou desenvolvedor web apaixonado por javascript e todo o seu
         ecossistema.
-      </SubTitle>
+      </Paragraph>
     </Container>
   );
 };

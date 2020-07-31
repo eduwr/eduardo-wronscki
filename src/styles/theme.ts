@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     cyan: '#00ADB5',
     darkPurple: '#393546',
     lightGrey: '#eeeeee',
+    lightGreyTransparency: 'rgba(238, 238, 238, 0.6)',
   },
   fontSize: {
     large: '36px',

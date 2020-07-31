@@ -1,9 +1,21 @@
 import React from 'react';
 
-import { Header } from '../components/organisms';
+import {
+  Header,
+  ServicesSection,
+  TechsSection,
+  Footer,
+} from '../components/organisms';
 
 const Main: React.FC = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <ServicesSection />
+      <TechsSection />
+      <Footer />
+    </>
+  );
 };
 
 export default Main;

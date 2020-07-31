@@ -7,6 +7,7 @@ declare module 'styled-components' {
       cyan: string;
       darkPurple: string;
       lightGrey: string;
+      lightGreyTransparency: string;
     };
     fontSize: {
       large: string;
