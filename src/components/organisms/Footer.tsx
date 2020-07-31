@@ -12,11 +12,6 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.colors.darkBlue};
 `;
 
-const Span = styled.span`
-  color: ${(props) => props.theme.colors.cyan};
-  font-size: 46px;
-`;
-
 export const Footer: React.FC = () => {
   return (
     <Container>
