@@ -29,7 +29,7 @@ export const Resume: React.FC = () => {
     <Container>
       <SubHeading color="lightGrey">Eduardo Wronscki</SubHeading>
       <Wrapper>
-        <Link href={require('../../assets/documents/resume.pdf')}>
+        <Link href={require('../../assets/documents/resume.pdf')} download>
           <Icon src={resumeIcon} size="small" />
         </Link>
         <Paragraph color="lightGrey" fontSize="tiny">

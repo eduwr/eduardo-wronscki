@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Icon, Paragraph, Link } from '../atoms';
+import { Icon, Paragraph, Link, GitHubIcon } from '../atoms';
 import linkedin from '../../assets/icons/linkedin.svg';
 import github from '../../assets/icons/github.svg';
 import instagram from '../../assets/icons/instagram.svg';
@@ -61,11 +61,12 @@ export const SocialMedias: React.FC = () => {
           const { id, icon, uri } = item;
 
           return (
-            <Link key={id} href={uri}>
+            <Link key={id} href={uri} target="_blank">
               <Icon src={icon} size="small" />
             </Link>
           );
         })}
+        <GitHubIcon />
       </Wrapper>
     </Container>
   );
