@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 interface Props {
   src: string;
+  size?: 'small' | 'default';
 }
 
-const Picture = styled.img`
-  height: 100px;
-  width: 100px;
+const Picture = styled.img<Props>`
+  height: ${(props) => (props.size === 'small' ? 50 : 100)}px;
+  width: ${(props) => (props.size === 'small' ? 50 : 100)}px;
 `;
 
 export const Icon: React.FC<Props> = (props) => {

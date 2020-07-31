@@ -5,6 +5,7 @@ import { Resume, SocialMedias } from '../molecules';
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   height: 450px;
   align-items: center;
   justify-content: center;

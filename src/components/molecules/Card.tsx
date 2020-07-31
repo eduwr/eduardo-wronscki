@@ -25,7 +25,7 @@ export const Card: React.FC<Props> = ({ src, title, paragraph }) => {
       <SubHeading color="lightGrey" fontSize="medium">
         {title}
       </SubHeading>
-      <Paragraph color="lightGreyTransparency" fontSize="small">
+      <Paragraph color="lightGreyTransparency" fontSize="tiny">
         {paragraph}
       </Paragraph>
     </Container>

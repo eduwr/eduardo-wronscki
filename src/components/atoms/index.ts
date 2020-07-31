@@ -4,3 +4,4 @@ export * from './HeaderBackground';
 export * from './TextElements';
 export * from './CardImg';
 export * from './Icon';
+export * from './Link';
