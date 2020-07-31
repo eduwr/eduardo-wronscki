@@ -18,6 +18,9 @@ const theme: DefaultTheme = {
   dropShadow: {
     circles: 'drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3))',
   },
+  layoutDivisors: {
+    maxWidth: '680px',
+  },
 };
 
 export default theme;

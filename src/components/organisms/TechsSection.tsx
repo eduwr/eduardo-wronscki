@@ -36,7 +36,8 @@ export const TechsSection: React.FC = () => {
   return (
     <Container>
       <SubHeading>Principais Tecnologias</SubHeading>
-      <TechList techs={techs} />
+      <TechList techs={techs.filter((tech) => tech.id <= 4)} />
+      <TechList techs={techs.filter((tech) => tech.id > 4)} />
     </Container>
   );
 };

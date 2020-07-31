@@ -18,9 +18,13 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  min-width: 50%;
+  width: 50%;
   justify-content: space-evenly;
   padding: 20px;
+  margin-top: 50px;
+  @media (max-width: ${(props) => props.theme.layoutDivisors.maxWidth}) {
+    width: 100%;
+  }
 `;
 
 const linkList = [

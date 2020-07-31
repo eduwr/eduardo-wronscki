@@ -35,6 +35,9 @@ const BigCircle = styled.img`
   position: absolute;
   animation: 20s ${rotateCounterclockwise} linear infinite;
   filter: ${(props) => props.theme.dropShadow.circles};
+  @media (max-width: ${(props) => props.theme.layoutDivisors.maxWidth}) {
+    display: none;
+  }
 `;
 
 const Container = styled.div`

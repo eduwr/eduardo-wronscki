@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
         <Span>Olá!</Span> O meu nome é <Span>Eduardo.</Span>
       </Title>
       <PictureWithCircles />
-      <Paragraph>
+      <Paragraph style={{ maxWidth: '80%' }}>
         Sou desenvolvedor web apaixonado por javascript e todo o seu
         ecossistema.
       </Paragraph>

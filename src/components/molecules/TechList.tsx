@@ -16,6 +16,7 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  margin-top: 16px;
 `;
 
 export const TechList: React.FC<Props> = ({ techs }) => {

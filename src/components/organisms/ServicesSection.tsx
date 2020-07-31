@@ -13,6 +13,11 @@ const Container = styled.div`
   width: 100%;
   height: 350px;
   background-color: ${(props) => props.theme.colors.darkPurple};
+  @media (max-width: ${(props) => props.theme.layoutDivisors.maxWidth}) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
 `;
 
 const cardData = [

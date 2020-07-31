@@ -16,6 +16,11 @@ const Container = styled.div`
   align-items: center;
   width: 25%;
   height: 90%;
+  @media (max-width: ${(props) => props.theme.layoutDivisors.maxWidth}) {
+    width: 80%;
+    height: auto;
+    margin: 30px 0;
+  }
 `;
 
 export const Card: React.FC<Props> = ({ src, title, paragraph }) => {
