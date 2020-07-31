@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
 import theme from './styles/theme';
 
-import App from './App';
+import Main from './pages/Main';
 
 import './styles/global-styles.css';
 
@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <App />
+      <Main />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),

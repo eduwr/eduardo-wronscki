@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 export default createGlobalStyle`
   #root {
@@ -15,8 +16,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: rgb(140, 140, 140);
-    color: #fff;
+    background: ${theme.colors.lightGrey};
+    color: ${theme.colors.lightGrey};
     -webkit-font-smoothing: antialiased;
   }
 
