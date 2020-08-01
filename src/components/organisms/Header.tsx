@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: space-evenly;
   overflow: hidden;
   background-color: ${(props) => props.theme.colors.lightGrey};
+  min-height: 350px;
 `;
 
 const Span = styled.span`

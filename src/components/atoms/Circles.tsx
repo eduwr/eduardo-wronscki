@@ -27,6 +27,9 @@ const SmallCircle = styled.img`
   position: absolute;
   animation: 60s ${rotateClockwise} linear infinite;
   filter: ${(props) => props.theme.dropShadow.circles};
+  @media (max-height: 400px) {
+    display: none;
+  }
 `;
 
 const BigCircle = styled.img`
@@ -36,6 +39,9 @@ const BigCircle = styled.img`
   animation: 60s ${rotateCounterclockwise} linear infinite;
   filter: ${(props) => props.theme.dropShadow.circles};
   @media (max-width: ${(props) => props.theme.layoutDivisors.maxWidth}) {
+    display: none;
+  }
+  @media (max-height: ${(props) => props.theme.layoutDivisors.maxHeight}) {
     display: none;
   }
 `;

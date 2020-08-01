@@ -39,6 +39,8 @@ const PText = styled.p<Props>`
       ? props.theme.fontSize[props.fontSize]
       : props.theme.fontSize.medium};
   text-align: center;
+  overflow: hidden;
+  text-align: center;
 `;
 
 export const Paragraph: React.FC<Props> = (props) => {

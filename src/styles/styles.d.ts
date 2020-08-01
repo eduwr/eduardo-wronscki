@@ -25,6 +25,7 @@ declare module 'styled-components' {
     };
     layoutDivisors: {
       maxWidth: string;
+      maxHeight: string;
     };
   }
 }

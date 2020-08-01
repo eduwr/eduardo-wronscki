@@ -24,6 +24,7 @@ const theme: DefaultTheme = {
   },
   layoutDivisors: {
     maxWidth: '680px',
+    maxHeight: '480px',
   },
 };
 
