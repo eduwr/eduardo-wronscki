@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Icon, Paragraph, Link, GitHubIcon } from '../atoms';
-import linkedin from '../../assets/icons/linkedin.svg';
-import github from '../../assets/icons/github.svg';
-import instagram from '../../assets/icons/instagram.svg';
-import twitter from '../../assets/icons/twitter.svg';
+import {
+  Paragraph,
+  GitHubIcon,
+  TwitterIcon,
+  InstagramIcon,
+  LinkedinIcon,
+} from '../atoms';
 
 const Container = styled.div`
   display: flex;
@@ -27,28 +29,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const linkList = [
-  {
-    id: 1,
-    icon: linkedin,
-    uri: 'https://www.linkedin.com/in/eduardo-wronscki-ricardo-0633421b/',
-  },
-  {
-    id: 2,
-    icon: github,
-    uri: 'https://github.com/eduwr',
-  },
-  {
-    id: 3,
-    icon: instagram,
-    uri: 'https://www.instagram.com/eduwric/',
-  },
-  {
-    id: 4,
-    icon: twitter,
-    uri: 'https://twitter.com/eduwric',
-  },
-];
+const Link = styled.a``;
 
 export const SocialMedias: React.FC = () => {
   return (
@@ -57,16 +38,21 @@ export const SocialMedias: React.FC = () => {
         Me siga nas redes sociais.
       </Paragraph>
       <Wrapper>
-        {linkList.map((item) => {
-          const { id, icon, uri } = item;
-
-          return (
-            <Link key={id} href={uri} target="_blank">
-              <Icon src={icon} size="small" />
-            </Link>
-          );
-        })}
-        <GitHubIcon />
+        <Link
+          href="https://www.linkedin.com/in/eduardo-wronscki-ricardo-0633421b/"
+          target="_blank"
+        >
+          <LinkedinIcon />
+        </Link>
+        <Link href="https://github.com/eduwr" target="_blank">
+          <GitHubIcon />
+        </Link>
+        <Link href="https://www.instagram.com/eduwric/" target="_blank">
+          <InstagramIcon />
+        </Link>
+        <Link href="https://twitter.com/eduwric" target="_blank">
+          <TwitterIcon />
+        </Link>
       </Wrapper>
     </Container>
   );

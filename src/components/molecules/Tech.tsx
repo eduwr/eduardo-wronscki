@@ -15,6 +15,7 @@ const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 10px ${(props) => (props.length ? 50 / props.length : 15)}vw;
   opacity: 0.5;
   transition: opacity 0.5s ease;

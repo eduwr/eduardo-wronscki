@@ -17,6 +17,10 @@ const theme: DefaultTheme = {
   },
   dropShadow: {
     circles: 'drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3))',
+    icons: {
+      hover: 'drop-shadow(0 5px 4px rgba(0, 0, 0, 0.5))',
+      active: 'drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.8))',
+    },
   },
   layoutDivisors: {
     maxWidth: '680px',

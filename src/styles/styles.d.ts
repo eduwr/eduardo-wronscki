@@ -18,6 +18,10 @@ declare module 'styled-components' {
     };
     dropShadow: {
       circles: string;
+      icons: {
+        active: string;
+        hover: string;
+      };
     };
     layoutDivisors: {
       maxWidth: string;

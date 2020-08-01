@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TechList, Slider, Tech } from '../molecules';
+import { Slider, Tech } from '../molecules';
 import javascript from '../../assets/icons/javascript.svg';
 import typescript from '../../assets/icons/typescript.svg';
 import nodejs from '../../assets/icons/nodejs.svg';
@@ -116,7 +116,3 @@ export const TechsSection: React.FC = () => {
     </Container>
   );
 };
-/*
-<TechList techs={techs.filter((tech) => tech.id <= 4)} />
-<TechList techs={techs.filter((tech) => tech.id > 4)} />
-*/

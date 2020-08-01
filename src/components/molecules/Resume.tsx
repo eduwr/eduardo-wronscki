@@ -1,9 +1,8 @@
 /* eslint-disable global-require */
 import React from 'react';
 import styled from 'styled-components';
-import resumeIcon from '../../assets/icons/resume.svg';
 
-import { Icon, Paragraph, SubHeading, Link } from '../atoms';
+import { Paragraph, SubHeading, ResumeIcon } from '../atoms';
 
 const Container = styled.div`
   display: flex;
@@ -24,13 +23,15 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const Link = styled.a``;
+
 export const Resume: React.FC = () => {
   return (
     <Container>
       <SubHeading color="lightGrey">Eduardo Wronscki</SubHeading>
       <Wrapper>
         <Link href={require('../../assets/documents/resume.pdf')} download>
-          <Icon src={resumeIcon} size="small" />
+          <ResumeIcon />
         </Link>
         <Paragraph color="lightGrey" fontSize="tiny">
           Currículo
